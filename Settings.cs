@@ -14,5 +14,6 @@
         public static char Indent = ' ';
         public static int IndentCount = 4;
         public static bool ShowInternal = false;
+        public static string SolutionPrefix = "Sitecore";
     }
 }

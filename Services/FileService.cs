@@ -28,7 +28,7 @@
                         var projectName = projectRoot.Split('\\').Last();
                         var project = new SfsProject();
                         project.Filesystem = fileSystem;
-                        project.Name = String.Join(layerName, projectName);
+                        project.Name = String.Join(".", Settings.SolutionPrefix, layerName, projectName);
                         project.FilePath = serializationRoot;
 
                         foreach (var predicateRoot in Directory.GetDirectories(serializationRoot))
